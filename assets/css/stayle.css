@@ -31,4 +31,20 @@ header nav ul li a {
   color: #000;
   font-size: 25px;
   text-decoration: none;
+}
+
+.container__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.container__content .content {
+  margin-left: 5%;
+}
+.container__content .content h1 {
+  font-size: 40px;
+}
+.container__content .content h2 {
+  font-size: 60px;
 }/*# sourceMappingURL=stayle.css.map */
