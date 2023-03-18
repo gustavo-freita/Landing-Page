@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #FEF6E4;
+}
+
 header {
   width: 100%;
 }
@@ -14,8 +18,12 @@ header nav {
   padding: 0 34px;
   min-height: 70px;
 }
-header nav .logo__animation h1 {
+header nav .logo__animation strong {
+  color: #7523D7;
   font-size: 35px;
+}
+header nav .logo__animation h1 {
+  font-size: 25px;
 }
 header nav ul {
   display: flex;
@@ -41,10 +49,50 @@ header nav ul li a {
 }
 .container__content .content {
   margin-left: 5%;
+  margin-bottom: 10%;
 }
 .container__content .content h1 {
   font-size: 40px;
+  color: #7523D7;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 .container__content .content h2 {
   font-size: 60px;
+  color: #2F095A;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+.container__content .content p {
+  font-size: 20px;
+  color: #2F095A;
+  opacity: 0.8;
+  margin-bottom: 65px;
+  width: 650px;
+  font-weight: 800;
+}
+.container__content .content .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container__content .content .buttons .singup {
+  padding: 10px 40px;
+  border-radius: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #000;
+  color: #F2E5C8;
+  background-image: linear-gradient(0deg, #381065, #4c1689, #601daf, #7523d7);
+}
+.container__content .content .buttons .login {
+  padding: 10px 40px;
+  border-radius: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 160px;
+  border: 1px solid #000;
+  color: #F2E5C8;
+  background-image: linear-gradient(180deg, #26006a, #3a0194, #4f04c1, #6509ef);
 }/*# sourceMappingURL=stayle.css.map */

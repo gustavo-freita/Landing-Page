@@ -3,6 +3,9 @@
     padding: 0
     box-sizing: border-box
 
+body
+    background-color: #FEF6E4
+
 header
     width: 100%
 
@@ -15,8 +18,12 @@ header
         
         .logo__animation
             
-            h1
+            strong
+                color: #7523D7
                 font-size: 35px
+            h1
+                font-size: 25px
+                
                 
         ul
             display: flex
@@ -27,13 +34,10 @@ header
 
             li
                 list-style: none
-            
                 a
                     color: #000
                     font-size: 25px
                     text-decoration: none
-
-            
 
 .container__content
     display: flex
@@ -43,9 +47,49 @@ header
 
     .content
         margin-left: 5%
+        margin-bottom: 10%
         
         h1
             font-size: 40px
+            color: #7523D7
+            margin-bottom: 20px
+            font-weight: 500
 
         h2
             font-size: 60px
+            color: #2F095A
+            margin-bottom: 20px
+            font-weight: 200
+            
+        p
+            font-size: 20px
+            color: #2F095A
+            opacity: 0.8
+            margin-bottom: 65px
+            width: 650px
+            font-weight: 800
+
+        .buttons
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 30px
+
+            .singup
+                padding: 10px 40px
+                border-radius: 80px
+                font-size: 20px
+                font-weight: 500
+                border: 1px solid #000
+                color: #F2E5C8
+                background-image: linear-gradient(0deg, #381065, #4c1689, #601daf, #7523d7)
+            
+            .login
+                padding: 10px 40px
+                border-radius: 80px
+                font-size: 20px
+                font-weight: 500
+                width: 160px
+                border: 1px solid #000
+                color: #F2E5C8
+                background-image: linear-gradient(180deg, #26006a, #3a0194, #4f04c1, #6509ef)
