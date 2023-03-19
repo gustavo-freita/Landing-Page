@@ -2,9 +2,12 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    font-family: 'Indie Flower', cursive
 
 body
-    background-color: #FEF6E4
+    background-image: linear-gradient(25deg, #3d209e, #7748b5, #aa71cd, #db9de4)
+    overflow-x: hidden
+    overflow-y: hidden
 
 header
     width: 100%
@@ -17,13 +20,14 @@ header
         min-height: 70px
         
         .logo__animation
+            opacity: 0
+            animation: logo 1s ease forwards
             
             strong
                 color: #7523D7
                 font-size: 35px
             h1
-                font-size: 25px
-                
+                font-size: 25px      
                 
         ul
             display: flex
@@ -31,6 +35,8 @@ header
             justify-content: space-around
             gap: 20px
             margin-right: 100px
+            opacity: 0
+            animation: cabecalho 2s ease forwards
 
             li
                 list-style: none
@@ -59,14 +65,20 @@ header
         h1
             font-size: 40px
             color: #7523D7
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75)
             margin-bottom: 20px
             font-weight: 500
+            opacity: 0
+            animation: titu01 1s ease forwards
 
         h2
             font-size: 60px
             color: #2F095A
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75)
             margin-bottom: 20px
             font-weight: 200
+            opacity: 0
+            animation: titu02 1s ease forwards
             
         p
             font-size: 20px
@@ -75,6 +87,8 @@ header
             margin-bottom: 65px
             width: 650px
             font-weight: 800
+            opacity: 0
+            animation: lorem 1s ease forwards
 
         .buttons
             display: flex
@@ -90,12 +104,16 @@ header
                 cursor: pointer
                 border: 1px solid #000
                 color: #F2E5C8
+                opacity: 0
+                animation: signup 1s ease forwards
                 transition: .6s ease
                 background-image: linear-gradient(0deg, #381065, #4c1689, #601daf, #7523d7)
             
             .singup:hover
+                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75)
+                box-shadow: 0 0 20px #381065
                 font-size: 22px
-                color: #000
+                color: #fff
                 background: linear-gradient(180deg, rgba(65,8,130,1) 27%, rgba(121,9,94,1) 100%)
 
             .login
@@ -107,16 +125,87 @@ header
                 width: 160px
                 border: 1px solid #000
                 color: #F2E5C8
+                opacity: 0
+                animation: login 1s ease forwards
                 transition: .6s ease
                 background-image: linear-gradient(180deg, #26006a, #3a0194, #4f04c1, #6509ef)
 
             .login:hover
+                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75)
+                box-shadow: 0 0 20px #381065
                 font-size: 22px
                 width: 180px
-                color: #000
+                color: #fff
                 background: linear-gradient(0deg, rgba(65,8,130,1) 27%, rgba(121,9,94,1) 100%)
 
-                img
+    img
+        position: absolute
+        rotate: -30deg
+        width: 55%
+        bottom: -150px
+        margin-left: 700px
+
 
                         
-                            
+@keyframes logo
+    0% 
+        transform: translateX(-100px)
+        opacity: 0
+  
+    100% 
+        transform: translateX(0)
+        opacity: 1  
+
+@keyframes cabecalho 
+    0% 
+        transform: translateX(100px)
+        opacity: 0
+    
+    100% 
+        transform: translateX(0)
+        opacity: 1                            
+
+@keyframes titu01 
+    0% 
+        transform: translateX(-100px)
+        opacity: 0
+    
+    100% 
+        transform: translateX(0)
+        opacity: 1                            
+
+@keyframes titu02 
+    0% 
+        transform: translateX(100px)
+        opacity: 0
+    
+    100% 
+        transform: translateX(0)
+        opacity: 1                            
+
+@keyframes lorem 
+    0% 
+        transform: translateX(-100px)
+        opacity: 0
+    
+    100% 
+        transform: translateX(0)
+        opacity: 1                            
+
+@keyframes signup 
+    0% 
+        transform: translateY(100px)
+        opacity: 0
+    
+    100% 
+        transform: translateY(0)
+        opacity: 1                            
+
+@keyframes login 
+    0% 
+        transform: translateY(-100px)
+        opacity: 0
+    
+    100% 
+        transform: translateY(0)
+        opacity: 1                            
