@@ -149,6 +149,7 @@ header nav ul li a:hover {
   width: 55%;
   bottom: -150px;
   margin-left: 700px;
+  z-index: -1px;
 }
 
 @keyframes logo {
