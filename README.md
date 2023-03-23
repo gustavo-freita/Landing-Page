@@ -9,8 +9,7 @@
 </h2>
 
 <h3 align="center">
-  <img width="50%" src="./assets/img/page01.png" />
-  <img width="50%" src="./assets/img/page02.png" />
+  <img width="70%" src="./assets/img/page01.png" />
 </h3>
 
 ### 🛠 Tecnologias
